@@ -1,4 +1,4 @@
-# vagrant-remnux
+# REMnux Vagrant Box
 
 ## Creating the REMnux Box
 
