@@ -2,6 +2,14 @@
 
 Install REMnux from scratch and create its Vagrant Box. The created Vagrant Box is uploaded to the [Vagrant Cloud](https://app.vagrantup.com/t-mtsmt/boxes/REMnux).
 
+## Quick Start
+
+```sh
+mkdir REMnux
+vagrant init t-mtsmt/REMnux
+vagrant up
+```
+
 ## Creating the Vagrant Box
 
 ### Preparing
@@ -23,7 +31,7 @@ Install REMnux from scratch and create its Vagrant Box. The created Vagrant Box 
 1. Boot and install REMnux VM 
 
     ```sh
-    vagrant up
+    vagrant up --provider=virtualbox
     ```
 
 1. Terminate REMnux VM
