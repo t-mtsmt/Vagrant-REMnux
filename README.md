@@ -1,6 +1,6 @@
 # REMnux Vagrant Box
 
-REMnux Vagrant Box installed from scratch using remnux-cli can be created.
+Install REMnux from scratch and create its Vagrant Box. The created Vagrant Box is uploaded to the [Vagrant Cloud](https://app.vagrantup.com/t-mtsmt/boxes/REMnux).
 
 ## Creating the Vagrant Box
 
