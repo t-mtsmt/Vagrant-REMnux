@@ -2,14 +2,6 @@
 
 Install REMnux from scratch and create its Vagrant Box. The created Vagrant Box is uploaded to the [Vagrant Cloud](https://app.vagrantup.com/t-mtsmt/boxes/REMnux).
 
-## Quick Start
-
-```sh
-mkdir REMnux
-vagrant init t-mtsmt/REMnux
-vagrant up
-```
-
 ## Creating the Vagrant Box
 
 ### Preparing
@@ -65,6 +57,46 @@ vagrant up
     ```sh
     vagrant package --vagrantfile vagrant_file/Vagrantfile --output remnux-v7-focal-vmware_desktop.box
     ```
+
+## Usage
+
+1. Create working directory
+
+   ```sh
+   mkdir remnux
+   cd remnux
+   ```
+
+1. Create Vagrantfile 
+
+   ```ruby
+   # -*- mode: ruby -*-
+   # vi: set ft=ruby :
+   
+   Vagrant.configure("2") do |config|
+     config.vm.box = "generic/ubuntu2004"
+   
+     config.vm.provider "virtualbox" do |v|
+       v.memory = 4096 
+       v.cpus = 2
+       v.gui = true
+     end
+   
+     config.vm.provider "vmware_desktop" do |v|
+       v.allowlist_verified = true
+       v.memory = 4096
+       v.cpus = 2
+       v.gui = true
+     end
+   
+   end
+   ```
+
+1. Run REMnux
+
+   ```sh
+   vagrant up
+   ```
 
 ## License
 
