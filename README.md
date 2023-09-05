@@ -100,7 +100,7 @@ Install REMnux from scratch and create its Vagrant Box. The created Vagrant Box 
 
 ## License
 
-vagrant-remnux is open-sourced software licensed under the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html)
+Vagrant-REMnux is open-sourced software licensed under the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html)
 
 ## Credits
 
