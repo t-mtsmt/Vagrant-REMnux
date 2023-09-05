@@ -74,7 +74,7 @@ Install REMnux from scratch and create its Vagrant Box. The created Vagrant Box 
    # vi: set ft=ruby :
    
    Vagrant.configure("2") do |config|
-     config.vm.box = "generic/ubuntu2004"
+     config.vm.box = "t-mtsmt/REMnux"
    
      config.vm.provider "virtualbox" do |v|
        v.memory = 4096 
